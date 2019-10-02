@@ -1,0 +1,56 @@
+\documentclass[10pt,twocolumn, a4j]{jsarticle}
+
+\usepackage[dvips, dvipdfmx]{graphicx}
+\usepackage{amsmath}
+\usepackage{eepic}
+\usepackage{comment}
+
+\setlength{\oddsidemargin}{-12mm}
+\setlength{\topmargin}{-16mm}
+\setlength{\textwidth}{181mm}
+\setlength{\columnsep}{8mm}
+
+%下端マージン，行間を調整するには、下記のパラメータを調整する
+\setlength{\textheight}{248mm}
+\renewcommand{\baselinestretch}{.87}
+
+\pagestyle{empty}
+
+\makeatletter
+\def\@biblabel#1{#1)}
+\def\@cite#1{#1)}
+\makeatother
+
+\begin{document}
+
+\twocolumn[
+
+{\LARGE
+\hspace*{17mm}00\hspace*{9mm}
+%卒業研究発表会概要集 原稿作成の手引き{\large 〜行数下限版〜
+卒業研究発表会概要集　原稿作成の手引き \\
+\hspace*{32mm} 行数下限版
+}
+
+\vspace{-2mm}
+\begin{flushright}
+近畿大学研究室\hspace{1.5zw}近大　太朗\hspace{1.5zw}
+
+\end{flushright}
+\vspace{1mm}
+]
+
+\renewcommand{\thesection}{\arabic{section} .}
+
+\vspace{-6.0cm}
+
+\input{body}
+
+\makeatletter
+\def\@biblabel#1{#1)}
+\makeatother
+
+% \bibliography{reference}
+% \bibliographystyle{tipsj}
+
+\end{document}
